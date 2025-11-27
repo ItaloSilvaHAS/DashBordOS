@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard do PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Dashboard do Computador</h1>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>Status do Sistema</h2>
+        <p>CPU: <span id="cpu"></span>%</p>
+        <p>RAM: <span id="ram"></span>%</p>
+        <p><span id="ramUsed"></span> GB usados de <span id="ramTotal"></span> GB</p>
+    </div>
+
+    <div class="card">
+        <h2>Abrir Programas</h2>
+        <input id="prog" placeholder="ex: notepad.exe">
+        <button onclick="abrir()">Abrir</button>
+        <p id="respAbrir"></p>
+    </div>
+
+    <div class="card">
+        <h2>Executar Comando</h2>
+        <input id="cmd" placeholder="ex: dir">
+        <button onclick="executar()">Executar</button>
+        <pre id="saidaCmd"></pre>
+    </div>
+
+    <div class="card">
+        <h2>Listar Arquivos</h2>
+        <input id="pasta" placeholder="ex: C:/Users">
+        <button onclick="listar()">Listar</button>
+        <pre id="arquivos"></pre>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
